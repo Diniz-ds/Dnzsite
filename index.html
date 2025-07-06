@@ -2,71 +2,76 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio de design gamer e anime. Criações únicas e visuais impactantes.">
-  <title>Design Gamer 🔥</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DNZ | Portfólio Gamer</title>
   <style>
     body {
       margin: 0;
-      background: #0D0D0F;
-      color: #ffffff;
-      font-family: 'Orbitron', sans-serif;
-      overflow-x: hidden;
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background: linear-gradient(135deg, #1a1a1a 60%, #27212f 100%);
+      font-family: 'Segoe UI', sans-serif;
+      background: #0e0e0e;
+      color: white;
       text-align: center;
-      padding: 2rem;
     }
-
     h1 {
-      font-size: 3rem;
-      background: linear-gradient(90deg, #00ffe1, #ff00e0);
+      font-size: 2.5rem;
+      margin: 30px 20px 10px;
+      background: linear-gradient(90deg, #ff00cc, #3333ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: glow 2s infinite alternate;
     }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 10px #00ffe1; }
-      to   { text-shadow: 0 0 20px #ff00e0; }
-    }
-
     p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 1rem auto 2rem;
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 30px;
     }
-
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .galeria img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
     .btn {
-      background: #00ffe1;
-      color: #0D0D0F;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #ff00e0;
+      background: #ff00cc;
       color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin: 30px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #e600aa;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Bem-vindo ao Universo Gamer Visual</h1>
-    <p>Criações únicas para quem vive e respira cultura gamer e anime. Designs que falam por você.</p>
-    <a href="#portfolio" class="btn">Ver Portfólio</a>
-  </header>
+  <h1>DNZ DESIGN FORCE</h1>
+  <p>Criações épicas que transformam o visual gamer em identidade. Anime, Clash, Free Fire e mais.</p>
+  
+  <a class="btn" href="https://instagram.com/dnzdesigner0" target="_blank">🔗 Ver Instagram</a>
+
+  <div class="galeria">
+    <img src="sukuna.png" alt="Sukuna Art" />
+    <img src="minato.png" alt="Minato Free Fire" />
+    <img src="luffy.jpg" alt="Luffy Gear 5" />
+    <img src="jeans.png" alt="JeanngD" />
+    <img src="ego.jpg" alt="Ego Ghost" />
+    <img src="cabra.jpg" alt="Borges Clash" />
+    <img src="ego.jpg" alt="Ego Ghost 2" />
+    <img src="artemis.png" alt="Artemis" />
+  </div>
 </body>
 </html>
