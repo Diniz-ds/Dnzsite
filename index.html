@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html><html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,67 +10,92 @@
       background: #0e0e0e;
       color: white;
       text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin: 30px 20px 10px;
-      background: linear-gradient(90deg, #ff00cc, #3333ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    p {
-      font-size: 1.1rem;
-      color: #ccc;
-      margin-bottom: 30px;
-    }
-    .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-    .galeria img {
-      max-width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
-      transition: transform 0.3s ease;
-    }
-    .galeria img:hover {
-      transform: scale(1.05);
-    }
-    .btn {
-      background: #ff00cc;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      margin: 30px;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s ease;
-    }
-    .btn:hover {
-      background: #e600aa;
-    }
-  </style>
-</head>
-<body>
-  <h1>DNZ DESIGN FORCE</h1>
-  <p>Criações épicas que transformam o visual gamer em identidade. Anime, Clash, Free Fire e mais.</p>
-  
-  <a class="btn" href="https://instagram.com/dnzdesigner0" target="_blank">🔗 Ver Instagram</a>
+    }header {
+  height: 100vh;
+  background: radial-gradient(circle at top, #1a1a1a, #0f0f0f);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
 
-  <div class="galeria">
+.glow {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00f0ff, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+.slogan {
+  color: #ccc;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #ff00cc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e600aa;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  margin: 40px 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head><body>
+  <header>
+    <h1 class="glow">DNZ DESIGN FORCE</h1>
+    <p class="slogan">Criações únicas que traduzem o mundo gamer em identidade visual de impacto.</p>
+    <a class="btn" href="https://instagram.com/dnzdesigner0" target="_blank">🎮 Ver Portfólio no Instagram</a>
+  </header>  <div class="galeria">
     <img src="sukuna.png" alt="Sukuna Art" />
     <img src="minato.png" alt="Minato Free Fire" />
     <img src="luffy.jpg" alt="Luffy Gear 5" />
     <img src="jeans.png" alt="JeanngD" />
     <img src="ego.jpg" alt="Ego Ghost" />
     <img src="cabra.jpg" alt="Borges Clash" />
-    <img src="ego.jpg" alt="Ego Ghost 2" />
     <img src="artemis.png" alt="Artemis" />
-  </div>
+  </div>  <footer>
+    © 2025 DNZ Designer | contato: lucasdiniz9912855@gmail.com
+  </footer>
 </body>
 </html>
