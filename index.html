@@ -3,6 +3,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DNZ | Portfólio Gamer</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <style>
     body {
       margin: 0;
@@ -53,6 +54,24 @@
   background: #e600aa;
 }
 
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ff00cc;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -74,6 +93,14 @@
   transform: scale(1.05);
 }
 
+.contato a {
+  display: inline-block;
+  margin: 10px;
+  color: #ff00cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 footer {
   margin: 40px 0;
   color: #888;
@@ -86,16 +113,37 @@ footer {
     <h1 class="glow">DNZ DESIGN FORCE</h1>
     <p class="slogan">Criações únicas que traduzem o mundo gamer em identidade visual de impacto.</p>
     <a class="btn" href="https://instagram.com/dnzdesigner0" target="_blank">🎮 Ver Portfólio no Instagram</a>
-  </header>  <div class="galeria">
-    <img src="sukuna.png" alt="Sukuna Art" />
-    <img src="minato.png" alt="Minato Free Fire" />
-    <img src="luffy.jpg" alt="Luffy Gear 5" />
-    <img src="jeans.png" alt="JeanngD" />
-    <img src="ego.jpg" alt="Ego Ghost" />
-    <img src="cabra.jpg" alt="Borges Clash" />
-    <img src="artemis.png" alt="Artemis" />
-  </div>  <footer>
+  </header>  <section class="reveal">
+    <h2>Sobre Mim</h2>
+    <p>Sou Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
+    <p>Trabalho com Canva, mas tenho domínio e conhecimento em ferramentas como Photoshop, Illustrator e Figma, o que me permite criar desde posts carrossel e identidades visuais até artes que elevam o posicionamento de marcas no Instagram.</p>
+    <p>Venho de uma trajetória administrativa, o que me deu organização, responsabilidade e disciplina — habilidades que hoje aplico em cada projeto visual que desenvolvo. Estou em constante evolução, buscando aprender e crescer como designer criativo, com o objetivo de me tornar uma referência no meio criativo e fechar parcerias que transformem ideias em realidade.</p>
+  </section>  <section class="reveal">
+    <h2>Portfólio</h2>
+    <div class="galeria">
+      <img src="sukuna.png" alt="Sukuna Art" />
+      <img src="minato.png" alt="Minato Free Fire" />
+      <img src="luffy.jpg" alt="Luffy Gear 5" />
+      <img src="jeans.png" alt="JeanngD" />
+      <img src="ego.jpg" alt="Ego Ghost" />
+      <img src="borges.png" alt="Borges Clash" />
+      <img src="artemis.png" alt="Artemis" />
+    </div>
+  </section>  <section class="contato reveal">
+    <h2>Contato</h2>
+    <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab?</p>
+    <a href="mailto:lucasdiniz9912855@gmail.com">✉️ Email</a>
+    <a href="https://instagram.com/dnzdesigner0" target="_blank">📸 Instagram</a>
+    <a href="https://discord.com/users/OPZ%20DINIZ%233921" target="_blank">💬 Discord: OPZ DINIZ#3921</a>
+  </section>  <footer>
     © 2025 DNZ Designer | contato: lucasdiniz9912855@gmail.com
-  </footer>
-</body>
+  </footer>  <script>
+    ScrollReveal().reveal('.reveal', {
+      distance: '40px',
+      duration: 1000,
+      easing: 'ease-out',
+      origin: 'bottom',
+      interval: 200
+    });
+  </script></body>
 </html>
