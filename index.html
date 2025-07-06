@@ -4,37 +4,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DNZ | Portfólio Gamer</title>
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
       background: #0e0e0e;
       color: white;
       text-align: center;
-    }header {
+      position: relative;
+      overflow-x: hidden;
+    }#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero {
+  background: url('bg.jpg') no-repeat center center/cover;
   height: 100vh;
-  background: radial-gradient(circle at top, #1a1a1a, #0f0f0f);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
-.glow {
-  font-size: 3rem;
-  background: linear-gradient(90deg, #00f0ff, #ff00e0);
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  background: linear-gradient(90deg, #ff00cc, #00f0ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
-  margin-bottom: 1rem;
+  text-shadow: 0 0 30px rgba(255, 0, 255, 0.7);
+  margin: 0;
 }
 
-.slogan {
+.hero p {
   color: #ccc;
   font-size: 1.2rem;
-  max-width: 600px;
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem;
+}
+
+.scroll-down {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  color: #ff00cc;
+  margin-top: 2rem;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+header, section, footer {
+  position: relative;
+  z-index: 2;
 }
 
 .btn {
@@ -108,10 +154,15 @@ footer {
 }
 
   </style>
-</head><body>
-  <header>
-    <h1 class="glow">DNZ DESIGN FORCE</h1>
-    <p class="slogan">Criações únicas que traduzem o mundo gamer em identidade visual de impacto.</p>
+</head>
+<body>
+  <div id="particles-js"></div>  <section class="hero">
+    <div class="hero-content">
+      <h1>DNZ DESIGN FORCE</h1>
+      <p>Transformando ideias em artes épicas para o universo gamer.</p>
+      <div class="scroll-down">↓</div>
+    </div>
+  </section>  <header>
     <a class="btn" href="https://instagram.com/dnzdesigner0" target="_blank">🎮 Ver Portfólio no Instagram</a>
   </header>  <section class="reveal">
     <h2>Sobre Mim</h2>
@@ -126,7 +177,7 @@ footer {
       <img src="luffy.jpg" alt="Luffy Gear 5" />
       <img src="jeans.png" alt="JeanngD" />
       <img src="ego.jpg" alt="Ego Ghost" />
-      <img src="borges.png" alt="Borges Clash" />
+      <img src="cabra.jpg" alt="Borges Clash" />
       <img src="artemis.png" alt="Artemis" />
     </div>
   </section>  <section class="contato reveal">
@@ -144,6 +195,55 @@ footer {
       easing: 'ease-out',
       origin: 'bottom',
       interval: 200
+    });
+
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": { "value": "#ff00cc" },
+        "shape": {
+          "type": "circle",
+          "stroke": { "width": 0, "color": "#000" }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false
+        },
+        "size": {
+          "value": 3,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ff00cc",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" },
+          "resize": true
+        }
+      },
+      "retina_detect": true
     });
   </script></body>
 </html>
