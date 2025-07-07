@@ -3,7 +3,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DNZ Designer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Bungee+Shade&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
@@ -28,20 +28,28 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, #3b82f6, #9333ea);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: none;
+  font-size: 2.8rem;
+  font-family: 'Bungee Shade', cursive;
+  background: none;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  padding: 0 20px;
 }
 
 .arrow a {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #00f0ff;
   animation: pulseDown 2s infinite;
+  display: inline-block;
+}
+
+.arrow a::before {
+  content: "\25BC";
+  font-family: 'Orbitron', sans-serif;
   display: inline-block;
 }
 
@@ -111,20 +119,17 @@ a {
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>  <section class="hero reveal" id="hero">
-    <h1>DESIGNS LENDÁRIOS PARA MENTES GAMERS</h1>
-    <div class="arrow"><a href="#about">⬇️</a></div>
+  <div id="particles-js"></div>
+  <section class="hero reveal" id="hero">
+    <h1>DNZ DESIGNER<br><span style="font-size: 1rem; font-family: 'Orbitron'; color: #a6a6ff;">FORÇA VISUAL DE ELITE</span></h1>
+    <div class="arrow"><a href="#about"></a></div>
   </section>  <section id="about" class="reveal">
     <h2>Sobre Mim</h2>
     <div class="hud">
-      <div class="hud-title">CLASS: VISUAL STRATEGIST | LEVEL: 21</div>
-      <div class="hud-desc">
-        <p>Sou o Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
-        <p>Trabalho com Canva, mas tenho domínio e conhecimento em ferramentas como Photoshop, Illustrator e Figma, o que me permite criar desde posts carrossel e identidades visuais até artes que elevam o posicionamento de marcas no Instagram.</p>
-        <p>Venho de uma trajetória administrativa, o que me deu organização, responsabilidade e disciplina — habilidades que hoje aplico em cada projeto visual que desenvolvo. Estou em constante evolução, buscando aprender e crescer como designer criativo, com o objetivo de me tornar uma referência no meio criativo e fechar parcerias que transformem ideias em realidade.</p>
-      </div>
+      <p>Sou o Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com base sólida em design gráfico e visão estratégica em marketing, redes sociais e IA, desenvolvo conteúdos que geram resultados.</p>
+      <p>Tenho domínio em Canva, Photoshop, Illustrator e Figma, criando de carrosséis a identidades visuais completas. Minha experiência administrativa me dá organização e disciplina para entregar sempre o melhor.</p>
     </div>
-    <div class="arrow"><a href="#portfolio">⬇️</a></div>
+    <div class="arrow"><a href="#portfolio"></a></div>
   </section>  <section id="portfolio" class="reveal">
     <h2>Meus Designs</h2>
     <div class="portfolio-images">
@@ -134,41 +139,35 @@ a {
       <img src="artemis.png" alt="Design Artemis" />
       <img src="ego.jpg" alt="Design Ego" />
     </div>
-    <div class="arrow"><a href="#orcamento">⬇️</a></div>
+    <div class="arrow"><a href="#orcamento"></a></div>
   </section>  <section id="orcamento" class="orcamento reveal">
     <h2>Simulador de Orçamento</h2>
     <label>Tipo de Arte:</label>
     <select id="tipo">
-      <option value="1.5">Post Carrossel (1.5h)</option>
-      <option value="2">Arte para Feed (2h)</option>
-      <option value="2">Thumbnail (2h)</option>
-      <option value="2">Logo Gamer Simples (2h)</option>
-      <option value="3.5">Logo Gamer Complexa (3.5h)</option>
-      <option value="3.5">Arte Anime/Collab (3.5h)</option>
+      <option value="22.5">Post Carrossel (1.5h)</option>
+      <option value="30">Arte para Feed (2h)</option>
+      <option value="30">Logo Gamer Simples (2h)</option>
+      <option value="52.5">Logo Gamer Complexa (3.5h)</option>
+      <option value="30">Thumbnail (2h)</option>
     </select>
-    <br>
-    <label>Horas adicionais:</label>
-    <input type="number" id="horasExtras" min="0" step="0.5" value="0">
-    <br>
-    <label>Prazo:</label>
-    <select id="prazo">
-      <option value="0">Normal (5-7 dias)</option>
-      <option value="1">Urgente (até 48h)</option>
+    <label>Urgência (dias):</label>
+    <select id="urgencia">
+      <option value="0">Entrega Normal</option>
+      <option value="1">1 dia</option>
+      <option value="2">2 dias</option>
+      <option value="3">3 dias</option>
     </select>
-    <br>
-    <label>Dias adicionais de prazo reduzido:</label>
-    <input type="number" id="diasUrgencia" min="0" max="5" value="0">
-    <br>
+    <label>Horas Extras:</label>
+    <input type="number" id="horasExtras" min="0" placeholder="0" />
     <button onclick="calcularOrcamento()">Calcular</button>
     <div class="resultado" id="resultado"></div>
-    <div class="arrow"><a href="#contact">⬇️</a></div>
   </section>  <section id="contact" class="reveal" style="background: #1a1a1a; padding: 60px 20px; border-top: 2px solid #00f0ff; box-shadow: 0 0 20px #00f0ff80;">
-    <h2 style="color: #00f0ff; font-family: 'Press Start 2P', monospace;">Entre em Contato</h2>
-    <p style="font-size: 1.1rem; color: #ccc;">Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
-    <p><strong>Email:</strong> <a href="mailto:lucasdiniz9912855@gmail.com" style="color: #00ffff;">lucasdiniz9912855@gmail.com</a></p>
-    <p><strong>Discord:</strong> <span style="color: #00ffff;">OPZ DINIZ#3921</span></p>
-    <p><strong>Instagram:</strong> <a href="https://instagram.com/dnzdesigner0" target="_blank" style="color: #00ffff;">@dnzdesigner0</a></p>
-    <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@dnzdesigner0" target="_blank" style="color: #00ffff;">@dnzdesigner0</a></p>
+    <h2>Entre em Contato</h2>
+    <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
+    <p><strong>Email:</strong> <a href="mailto:lucasdiniz9912855@gmail.com">lucasdiniz9912855@gmail.com</a></p>
+    <p><strong>Discord:</strong> OPZ DINIZ#3921</p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
+    <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
   </section>  <script>
     ScrollReveal().reveal('.reveal', {
       distance: '60px',
@@ -208,16 +207,12 @@ a {
     });
 
     function calcularOrcamento() {
-      const valorHora = 15;
       const tipo = parseFloat(document.getElementById('tipo').value);
-      const horasExtras = parseFloat(document.getElementById('horasExtras').value);
-      const diasUrgencia = parseInt(document.getElementById('diasUrgencia').value);
-      const prazo = parseInt(document.getElementById('prazo').value);
-
-      let precoBase = (tipo + horasExtras) * valorHora;
-      let adicionalUrgencia = prazo === 1 ? precoBase * (0.1 * diasUrgencia) : 0;
-      const total = precoBase + adicionalUrgencia;
-
+      const dias = parseInt(document.getElementById('urgencia').value);
+      const horasExtras = parseFloat(document.getElementById('horasExtras').value || 0);
+      const valorHora = 15;
+      let total = tipo + (horasExtras * valorHora);
+      total += total * (dias * 0.1);
       document.getElementById('resultado').innerHTML = `Valor estimado: R$${total.toFixed(2)}`;
     }
   </script></body>
