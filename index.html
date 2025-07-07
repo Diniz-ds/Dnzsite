@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,99 +15,104 @@
       background-color: #121212;
       color: #fff;
       cursor: url('cursor-gamer.png'), auto;
-    }#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
+    }
 
-.hero {
-  height: 100vh;
-  background: url('bg.jpg') center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
 
-.hero h1 {
-  font-size: 2.5rem;
-  color: silver;
-  text-shadow: 0 0 20px #00f0ff;
-}
+    .hero {
+      height: 100vh;
+      background: url('bg.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
-.arrow a {
-  font-size: 2rem;
-  color: #00f0ff;
-}
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      text-shadow: 0 0 30px #00ffff, 0 0 10px #00ffff;
+    }
 
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
+    .arrow a {
+      font-size: 2rem;
+      color: #00f0ff;
+    }
 
-h2 {
-  color: #00f0ff;
-  font-family: 'Press Start 2P', monospace;
-  margin-bottom: 30px;
-}
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-.hud {
-  border: 2px solid #00ffff;
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 20px #00ffff80;
-}
+    h2 {
+      color: #00f0ff;
+      font-family: 'Press Start 2P', monospace;
+      margin-bottom: 30px;
+    }
 
-.portfolio-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
+    .hud {
+      border: 2px solid #00ffff;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 20px #00ffff80;
+    }
 
-.portfolio-images img {
-  width: 280px;
-  border-radius: 12px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+    .portfolio-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
 
-.portfolio-images img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #00f0ff;
-}
+    .portfolio-images img {
+      width: 280px;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-.orcamento select, .orcamento button {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 8px;
-  border: none;
-  font-size: 1rem;
-}
+    .portfolio-images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00f0ff;
+    }
 
-.resultado {
-  color: #0ff;
-  font-size: 1.2rem;
-  margin-top: 20px;
-}
+    .orcamento select, .orcamento button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
 
-a {
-  color: #00f0ff;
-  text-decoration: none;
-}
+    .resultado {
+      color: #0ff;
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
 
+    a {
+      color: #00f0ff;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>  <section class="hero reveal" id="hero">
+  <div id="particles-js"></div>
+
+  <section class="hero reveal" id="hero">
     <h1>DESIGNS LENDÁRIOS PARA MENTES GAMERS</h1>
     <div class="arrow"><a href="#about">⬇️</a></div>
-  </section>  <section id="about" class="reveal">
+  </section>
+
+  <section id="about" class="reveal">
     <h2>Sobre Mim</h2>
     <div class="hud">
       <div class="hud-title">CLASS: VISUAL STRATEGIST | LEVEL: 21</div>
@@ -117,7 +123,9 @@ a {
       </div>
     </div>
     <div class="arrow"><a href="#portfolio">⬇️</a></div>
-  </section>  <section id="portfolio" class="reveal">
+  </section>
+
+  <section id="portfolio" class="reveal">
     <h2>Meus Designs</h2>
     <div class="portfolio-images">
       <img src="sukuna.png" alt="Design Sukuna" />
@@ -127,30 +135,38 @@ a {
       <img src="ego.jpg" alt="Design Ego" />
     </div>
     <div class="arrow"><a href="#orcamento">⬇️</a></div>
-  </section>  <section id="orcamento" class="orcamento reveal">
+  </section>
+
+  <section id="orcamento" class="orcamento reveal">
     <h2>Simulador de Orçamento</h2>
     <label>Tipo de Arte:</label>
     <select id="tipo">
-      <option value="30">Post Carrossel</option>
-      <option value="35">Arte para Feed</option>
-      <option value="40">Logo Gamer Simples</option>
-      <option value="40">Arte Anime/Collab</option>
+      <option value="1.5">Post Carrossel (1.5h)</option>
+      <option value="2">Arte para Feed (2h)</option>
+      <option value="2">Thumbnail (2h)</option>
+      <option value="2">Logo Gamer Simples (2h)</option>
+      <option value="3.5">Logo Gamer Complexa (3.5h)</option>
+      <option value="3.5">Arte Anime/Collab (3.5h)</option>
     </select>
     <label>Prazo:</label>
     <select id="prazo">
       <option value="0">Normal (5-7 dias)</option>
-      <option value="10">Urgente (3 dias)</option>
+      <option value="1">Urgente (até 48h)</option>
     </select>
     <button onclick="calcularOrcamento()">Calcular</button>
     <div class="resultado" id="resultado"></div>
     <div class="arrow"><a href="#contact">⬇️</a></div>
-  </section>  <section id="contact" class="reveal">
+  </section>
+
+  <section id="contact" class="reveal">
     <h2>Entre em Contato</h2>
     <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
     <p><strong>Email:</strong> <a href="mailto:lucasdiniz9912855@gmail.com">lucasdiniz9912855@gmail.com</a></p>
     <p><strong>Discord:</strong> OPZ DINIZ#3921</p>
     <p><strong>Instagram:</strong> <a href="https://instagram.com/dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
-  </section>  <script>
+  </section>
+
+  <script>
     ScrollReveal().reveal('.reveal', {
       distance: '60px',
       duration: 1200,
@@ -189,10 +205,14 @@ a {
     });
 
     function calcularOrcamento() {
-      const tipo = parseInt(document.getElementById('tipo').value);
+      const valorHora = 15;
+      const tipo = parseFloat(document.getElementById('tipo').value);
       const prazo = parseInt(document.getElementById('prazo').value);
-      const total = tipo + prazo;
-      document.getElementById('resultado').innerHTML = `Valor estimado: R$${total},00`;
+      let precoBase = tipo * valorHora;
+      let adicionalUrgencia = prazo === 1 ? precoBase * 0.5 : 0;
+      const total = precoBase + adicionalUrgencia;
+      document.getElementById('resultado').innerHTML = `Valor estimado: R$${total.toFixed(2)}`;
     }
-  </script></body>
+  </script>
+</body>
 </html>
