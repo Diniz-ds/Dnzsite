@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="pt-br"><head>
+<!DOCTYPE html><html lang="pt-br">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DNZ | Portfólio Gamer</title>
@@ -9,59 +10,76 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #0e0e0e;
+      background: linear-gradient(180deg, #080808, #1a1a1a);
       color: white;
       text-align: center;
       position: relative;
       overflow-x: hidden;
-    }
-    #particles-js {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }header {
+    }#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+header {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  background: url('bg.jpg') no-repeat center center/cover;
+  position: relative;
 }
 
 .glow {
-  font-size: 3rem;
-  background: linear-gradient(90deg, #00f0ff, #ff00e0);
+  font-size: 3.5rem;
+  background: linear-gradient(90deg, #ff0000, #ff00cc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+  text-shadow: 0 0 30px rgba(255, 0, 255, 0.5);
   margin-bottom: 1rem;
 }
 
 .slogan {
   color: #ccc;
-  font-size: 1.2rem;
-  max-width: 600px;
+  font-size: 1.3rem;
+  max-width: 700px;
   margin-bottom: 2rem;
 }
 
-.btn {
+.btn, .scroll-btn {
   background: #ff00cc;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 24px;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
-  margin: 30px;
+  margin: 10px;
   text-decoration: none;
   display: inline-block;
   transition: background 0.3s ease;
 }
 
-.btn:hover {
+.btn:hover, .scroll-btn:hover {
   background: #e600aa;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
 }
 
 section {
@@ -122,15 +140,15 @@ footer {
 <body>
   <div id="particles-js"></div>
   <header>
-    <h1 class="glow">DNZ DESIGN FORCE</h1>
-    <p class="slogan">Criações únicas que traduzem o mundo gamer em identidade visual de impacto.</p>
+    <h1 class="glow">DESIGNS LENDÁRIOS PARA MENTES GAMERS</h1>
+    <p class="slogan">Criações visuais que transformam paixão em identidade. Deixe sua marca no mundo gamer com artes únicas e poderosas.</p>
     <a class="btn" href="https://instagram.com/dnzdesigner0" target="_blank">🎮 Ver Portfólio no Instagram</a>
-  </header>  <section class="reveal">
+    <a class="scroll-btn" href="#portfolio">⬇️ Ver Portfólio</a>
+    <div class="scroll-down">⬇</div>
+  </header>  <section id="sobre" class="reveal">
     <h2>Sobre Mim</h2>
-    <p>Sou Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
-    <p>Trabalho com Canva, mas tenho domínio e conhecimento em ferramentas como Photoshop, Illustrator e Figma, o que me permite criar desde posts carrossel e identidades visuais até artes que elevam o posicionamento de marcas no Instagram.</p>
-    <p>Venho de uma trajetória administrativa, o que me deu organização, responsabilidade e disciplina — habilidades que hoje aplico em cada projeto visual que desenvolvo. Estou em constante evolução, buscando aprender e crescer como designer criativo, com o objetivo de me tornar uma referência no meio criativo e fechar parcerias que transformem ideias em realidade.</p>
-  </section>  <section class="reveal">
+    <p>Sou Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital...</p>
+  </section>  <section id="portfolio" class="reveal">
     <h2>Portfólio</h2>
     <div class="galeria">
       <img src="sukuna.png" alt="Sukuna Art" />
@@ -160,24 +178,15 @@ footer {
       "particles": {
         "number": {
           "value": 80,
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
+          "density": { "enable": true, "value_area": 800 }
         },
         "color": { "value": "#ff00cc" },
         "shape": {
           "type": "circle",
           "stroke": { "width": 0, "color": "#000" }
         },
-        "opacity": {
-          "value": 0.5,
-          "random": false
-        },
-        "size": {
-          "value": 3,
-          "random": true
-        },
+        "opacity": { "value": 0.5 },
+        "size": { "value": 3, "random": true },
         "line_linked": {
           "enable": true,
           "distance": 150,
@@ -189,10 +198,7 @@ footer {
           "enable": true,
           "speed": 2,
           "direction": "none",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": false
+          "out_mode": "out"
         }
       },
       "interactivity": {
