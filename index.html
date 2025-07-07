@@ -1,5 +1,4 @@
-<!DOCTYPE html><html lang="pt-br">
-<head>
+<!DOCTYPE html><html lang="pt-br"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DNZ | Portfólio Gamer</title>
@@ -23,89 +22,101 @@
       width: 100%;
       height: 100%;
       z-index: -1;
-    }
-    header {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 0 20px;
-    }
-    .glow {
-      font-size: 3rem;
-      background: linear-gradient(90deg, #00f0ff, #ff00e0);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
-      margin-bottom: 1rem;
-    }
-    .slogan {
-      color: #ccc;
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin-bottom: 2rem;
-    }
-    .btn {
-      background: #ff00cc;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      margin: 30px;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s ease;
-    }
-    .btn:hover {
-      background: #e600aa;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    h2 {
-      font-size: 2rem;
-      color: #ff00cc;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1rem;
-      color: #ccc;
-      line-height: 1.6;
-    }
-    .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-    .galeria img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
-      transition: transform 0.3s ease;
-    }
-    .galeria img:hover {
-      transform: scale(1.05);
-    }
-    .contato a {
-      display: inline-block;
-      margin: 10px;
-      color: #ff00cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      margin: 40px 0;
-      color: #888;
-      font-size: 0.9rem;
-    }
+    }header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.glow {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00f0ff, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+.slogan {
+  color: #ccc;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #ff00cc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e600aa;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ff00cc;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+.contato a {
+  display: inline-block;
+  margin: 10px;
+  color: #ff00cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  margin: 40px 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
   </style>
 </head>
 <body>
@@ -125,7 +136,6 @@
       <img src="sukuna.png" alt="Sukuna Art" />
       <img src="minato.png" alt="Minato Free Fire" />
       <img src="luffy.jpg" alt="Luffy Gear 5" />
-      <img src="jeanngd-v2.jpg" alt="JeanNGD" />
       <img src="ego.jpg" alt="Ego Ghost" />
       <img src="artemis.png" alt="Artemis" />
     </div>
@@ -150,12 +160,24 @@
       "particles": {
         "number": {
           "value": 80,
-          "density": { "enable": true, "value_area": 800 }
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
         },
         "color": { "value": "#ff00cc" },
-        "shape": { "type": "circle" },
-        "opacity": { "value": 0.5 },
-        "size": { "value": 3, "random": true },
+        "shape": {
+          "type": "circle",
+          "stroke": { "width": 0, "color": "#000" }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false
+        },
+        "size": {
+          "value": 3,
+          "random": true
+        },
         "line_linked": {
           "enable": true,
           "distance": 150,
@@ -169,7 +191,8 @@
           "direction": "none",
           "random": false,
           "straight": false,
-          "out_mode": "out"
+          "out_mode": "out",
+          "bounce": false
         }
       },
       "interactivity": {
