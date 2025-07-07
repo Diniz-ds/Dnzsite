@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,119 +12,124 @@
       background-color: #0a0a0a;
       color: #fff;
       overflow-x: hidden;
-    }#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
+    }
 
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.8)), url('bg-site.jpg') no-repeat center center/cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-}
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
 
-.hero h1 {
-  font-size: 2.5rem;
-  color: #c9d6ff;
-  text-shadow: 0 0 10px #000;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-}
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.8)), url('bg-site.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
 
-.arrow {
-  margin-top: 20px;
-  animation: pulse 2s infinite;
-}
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #c9d6ff;
+      text-shadow: 0 0 10px #000;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
 
-.arrow img {
-  width: 35px;
-}
+    .arrow {
+      margin-top: 20px;
+      animation: pulse 2s infinite;
+    }
 
-@keyframes pulse {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
-  100% { transform: translateY(0); }
-}
+    .arrow img {
+      width: 35px;
+    }
 
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-}
+    @keyframes pulse {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+      100% { transform: translateY(0); }
+    }
 
-h2 {
-  font-family: 'Orbitron', sans-serif;
-  color: #7f5af0;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
 
-.hud {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  border-radius: 10px;
-  border: 2px solid #7f5af0;
-  box-shadow: 0 0 20px #7f5af088;
-}
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #7f5af0;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
 
-.portfolio-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
+    .hud {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #7f5af0;
+      box-shadow: 0 0 20px #7f5af088;
+    }
 
-.portfolio-images img {
-  max-width: 280px;
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 0 15px #7f5af0aa;
-  transition: transform 0.3s ease;
-}
+    .portfolio-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
 
-.portfolio-images img:hover {
-  transform: scale(1.05);
-}
+    .portfolio-images img {
+      max-width: 280px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #7f5af0aa;
+      transition: transform 0.3s ease;
+    }
 
-.orcamento select, .orcamento button {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 8px;
-  border: none;
-  font-size: 1rem;
-}
+    .portfolio-images img:hover {
+      transform: scale(1.05);
+    }
 
-.orcamento .resultado {
-  margin-top: 20px;
-  color: #0ff;
-  font-size: 1.2rem;
-}
+    .orcamento select, .orcamento button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
 
-.contact a {
-  color: #7f5af0;
-  text-decoration: none;
-  display: block;
-  margin: 10px 0;
-}
+    .orcamento .resultado {
+      margin-top: 20px;
+      color: #0ff;
+      font-size: 1.2rem;
+    }
 
+    .contact a {
+      color: #7f5af0;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+    }
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>  <section class="hero">
+  <div id="particles-js"></div>
+
+  <section class="hero">
     <h1>ENTRE NO UNIVERSO VISUAL DE UM DESIGNER DE ELITE</h1>
     <div class="arrow">
       <a href="#about"><img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Seta para baixo"></a>
     </div>
-  </section>  <section id="about">
+  </section>
+
+  <section id="about">
     <h2>Sobre Mim</h2>
     <div class="hud">
       <p>Sou o Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
@@ -133,7 +139,9 @@ h2 {
     <div class="arrow">
       <a href="#portfolio"><img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Seta para baixo"></a>
     </div>
-  </section>  <section id="portfolio">
+  </section>
+
+  <section id="portfolio">
     <h2>Meus Designs</h2>
     <div class="portfolio-images">
       <img src="sukuna.png" alt="Design Sukuna" />
@@ -145,7 +153,9 @@ h2 {
     <div class="arrow">
       <a href="#orcamento"><img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Seta para baixo"></a>
     </div>
-  </section>  <section id="orcamento" class="orcamento">
+  </section>
+
+  <section id="orcamento" class="orcamento">
     <h2>Simulador de Orçamento</h2>
     <label>Tipo de Arte:</label>
     <select id="tipo">
@@ -166,7 +176,9 @@ h2 {
     <div class="arrow">
       <a href="#contact"><img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Seta para baixo"></a>
     </div>
-  </section>  <section id="contact" class="contact">
+  </section>
+
+  <section id="contact" class="contact">
     <h2>Entre em Contato</h2>
     <div class="hud">
       <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
@@ -175,7 +187,10 @@ h2 {
       <a href="https://discord.com/users/OPZ%20DINIZ%233921" target="_blank">💬 Discord: OPZ DINIZ#3921</a>
       <a href="https://tiktok.com/@dnzdesigner0" target="_blank">🎥 TikTok: @dnzdesigner0</a>
     </div>
-  </section>  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>  <script>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
     particlesJS("particles-js", {
       particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -211,5 +226,6 @@ h2 {
       const total = tipo + prazo;
       document.getElementById('resultado').innerHTML = `Valor estimado: R$${total},00`;
     }
-  </script></body>
+  </script>
+</body>
 </html>
