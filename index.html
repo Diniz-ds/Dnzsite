@@ -1,72 +1,110 @@
 <!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DNZ Designer</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
     body {
-      cursor: url('cursor-gamer.png'), auto;
-      background: #111;
-    }
-    #particles-js {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-    .portfolio-images img:hover {
-      box-shadow: 0 0 25px #00ffff;
-      transform: scale(1.08);
-    }
-    .hud {
-      border: 2px solid #00ffff;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 800px;
-      border-radius: 10px;
-      background: rgba(0, 0, 0, 0.4);
-      box-shadow: 0 0 20px #00ffff80;
-    }
-    .hud-title {
-      font-family: 'Press Start 2P', monospace;
-      color: #00ffff;
-      font-size: 1rem;
-      margin-bottom: 15px;
-    }
-    .hud-desc {
-      font-size: 1rem;
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #121212;
       color: #fff;
-    }
-    .orcamento {
-      background: #111;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .orcamento select, .orcamento button {
-      padding: 10px;
-      margin: 10px;
-      border-radius: 8px;
-      border: none;
-      font-size: 1rem;
-    }
-    .orcamento .resultado {
-      margin-top: 20px;
-      color: #0ff;
-      font-size: 1.2rem;
-    }
-    .hero h1 {
-      color: #c0c0c0;
-    }
+      cursor: url('cursor-gamer.png'), auto;
+    }#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero {
+  height: 100vh;
+  background: url('bg.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: silver;
+  text-shadow: 0 0 20px #00f0ff;
+}
+
+.arrow a {
+  font-size: 2rem;
+  color: #00f0ff;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #00f0ff;
+  font-family: 'Press Start 2P', monospace;
+  margin-bottom: 30px;
+}
+
+.hud {
+  border: 2px solid #00ffff;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px #00ffff80;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-images img {
+  width: 280px;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00f0ff;
+}
+
+.orcamento select, .orcamento button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.resultado {
+  color: #0ff;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+a {
+  color: #00f0ff;
+  text-decoration: none;
+}
+
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>
-  <section class="hero reveal" id="hero">
-    <h1>DNZ DESIGNER<br><span style="font-size: 1rem; font-family: 'Press Start 2P'; color: #00ffff;">FORÇA VISUAL DE ELITE</span></h1>
+  <div id="particles-js"></div>  <section class="hero reveal" id="hero">
+    <h1>DESIGNS LENDÁRIOS PARA MENTES GAMERS</h1>
     <div class="arrow"><a href="#about">⬇️</a></div>
   </section>  <section id="about" class="reveal">
     <h2>Sobre Mim</h2>
@@ -105,11 +143,13 @@
     </select>
     <button onclick="calcularOrcamento()">Calcular</button>
     <div class="resultado" id="resultado"></div>
+    <div class="arrow"><a href="#contact">⬇️</a></div>
   </section>  <section id="contact" class="reveal">
     <h2>Entre em Contato</h2>
     <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
     <p><strong>Email:</strong> <a href="mailto:lucasdiniz9912855@gmail.com">lucasdiniz9912855@gmail.com</a></p>
     <p><strong>Discord:</strong> OPZ DINIZ#3921</p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
   </section>  <script>
     ScrollReveal().reveal('.reveal', {
       distance: '60px',
@@ -122,14 +162,14 @@
     particlesJS("particles-js", {
       particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#00ffff" },
+        color: { value: "#00f0ff" },
         shape: { type: "circle" },
         opacity: { value: 0.4 },
         size: { value: 3, random: true },
         line_linked: {
           enable: true,
           distance: 150,
-          color: "#00ffff",
+          color: "#00f0ff",
           opacity: 0.3,
           width: 1
         },
