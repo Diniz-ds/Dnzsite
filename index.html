@@ -2,127 +2,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DNZ Designer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Bungee+Shade&family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <title>Portfólio Gamer DNZ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #121212;
+      font-family: 'Rajdhani', sans-serif;
+      background-color: #0a0a0a;
       color: #fff;
-      cursor: url('cursor-gamer.png'), auto;
-    }
-    #particles-js {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-    .hero {
-      height: 100vh;
-      background: url('bg.jpg') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-    .hero h1 {
-      font-size: 2.6rem;
-      font-family: 'Bebas Neue', sans-serif;
-      color: #ffffff;
-      text-shadow: 2px 2px 6px #6600cc;
-      padding: 0 20px;
-    }
-    .arrow a {
-      font-size: 2.5rem;
-      color: #00f0ff;
-      animation: pulseDown 2s infinite;
-      display: inline-block;
-    }
-    .arrow a::before {
-      content: "\25BC";
-      font-family: 'Orbitron', sans-serif;
-      display: inline-block;
-    }
-    @keyframes pulseDown {
-      0%, 100% { transform: translateY(0); opacity: 0.8; }
-      50% { transform: translateY(10px); opacity: 1; }
-    }
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    h2 {
-      color: #00f0ff;
-      font-family: 'Press Start 2P', monospace;
-      margin-bottom: 30px;
-    }
-    .hud {
-      border: 2px solid #00ffff;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      border-radius: 10px;
-      background: rgba(0, 0, 0, 0.4);
-      box-shadow: 0 0 20px #00ffff80;
-    }
-    .portfolio-images {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .portfolio-images img {
-      width: 280px;
-      border-radius: 12px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .portfolio-images img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px #00f0ff;
-    }
-    .orcamento select, .orcamento button, .orcamento input {
-      padding: 10px;
-      margin: 10px;
-      border-radius: 8px;
-      border: none;
-      font-size: 1rem;
-    }
-    .resultado {
-      color: #0ff;
-      font-size: 1.2rem;
-      margin-top: 20px;
-    }
-    a {
-      color: #00f0ff;
-      text-decoration: none;
-    }
-    @keyframes glowText {
-      from { text-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff; }
-      to { text-shadow: 0 0 16px #00f0ff, 0 0 32px #00f0ff; }
-    }
+      overflow-x: hidden;
+    }#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero {
+  height: 100vh;
+  background: url('bg-site.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #c9d6ff;
+  text-shadow: 0 0 10px #000;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.arrow {
+  margin-top: 20px;
+  animation: pulse 2s infinite;
+}
+
+.arrow img {
+  width: 35px;
+}
+
+@keyframes pulse {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+  100% { transform: translateY(0); }
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #7f5af0;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hud {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #7f5af0;
+  box-shadow: 0 0 20px #7f5af088;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-images img {
+  max-width: 280px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #7f5af0aa;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-images img:hover {
+  transform: scale(1.05);
+}
+
+.orcamento select, .orcamento button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.orcamento .resultado {
+  margin-top: 20px;
+  color: #0ff;
+  font-size: 1.2rem;
+}
+
+.contact a {
+  color: #7f5af0;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}
+
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>
-  <section class="hero reveal" id="hero">
-    <h1>Bem-vindo ao meu portfólio gamer criativo</h1>
-    <div class="arrow"><a href="#about"></a></div>
-  </section>
-  <section id="about" class="reveal">
+  <div id="particles-js"></div>  <section class="hero">
+    <h1>ENTRE NO UNIVERSO VISUAL DE UM DESIGNER DE ELITE</h1>
+    <div class="arrow">
+      <a href="#about"><img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Seta para baixo"></a>
+    </div>
+  </section>  <section id="about">
     <h2>Sobre Mim</h2>
     <div class="hud">
       <p>Sou o Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
       <p>Trabalho com Canva, mas tenho domínio e conhecimento em ferramentas como Photoshop, Illustrator e Figma, o que me permite criar desde posts carrossel e identidades visuais até artes que elevam o posicionamento de marcas no Instagram.</p>
       <p>Venho de uma trajetória administrativa, o que me deu organização, responsabilidade e disciplina — habilidades que hoje aplico em cada projeto visual que desenvolvo. Estou em constante evolução, buscando aprender e crescer como designer criativo, com o objetivo de me tornar uma referência no meio criativo e fechar parcerias que transformem ideias em realidade.</p>
     </div>
-    <div class="arrow"><a href="#portfolio"></a></div>
-  </section>
-  <section id="portfolio" class="reveal">
+    <div class="arrow">
+      <a href="#portfolio"><img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Seta para baixo"></a>
+    </div>
+  </section>  <section id="portfolio">
     <h2>Meus Designs</h2>
     <div class="portfolio-images">
       <img src="sukuna.png" alt="Design Sukuna" />
@@ -131,64 +142,52 @@
       <img src="artemis.png" alt="Design Artemis" />
       <img src="ego.jpg" alt="Design Ego" />
     </div>
-    <div class="arrow"><a href="#orcamento"></a></div>
-  </section>
-  <section id="orcamento" class="orcamento reveal">
+    <div class="arrow">
+      <a href="#orcamento"><img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Seta para baixo"></a>
+    </div>
+  </section>  <section id="orcamento" class="orcamento">
     <h2>Simulador de Orçamento</h2>
     <label>Tipo de Arte:</label>
     <select id="tipo">
-      <option value="30">Post Carrossel</option>
-      <option value="35">Arte para Feed</option>
-      <option value="40">Logo Gamer Simples</option>
-      <option value="50">Logo Gamer Complexa</option>
-      <option value="45">Thumbnail</option>
+      <option value="40">Post Carrossel</option>
+      <option value="45">Arte para Feed</option>
+      <option value="50">Logo Gamer Simples</option>
+      <option value="60">Logo Gamer Avançada</option>
       <option value="50">Arte Anime/Collab</option>
+      <option value="45">Thumbnail</option>
     </select>
     <label>Prazo:</label>
     <select id="prazo">
       <option value="0">Normal (5-7 dias)</option>
-      <option value="10">Urgente (3 dias)</option>
-    </select>
-    <label>Horas Extras:</label>
-    <select id="horas">
-      <option value="0">Sem adicionais</option>
-      <option value="5">+1 hora</option>
-      <option value="10">+2 horas</option>
-      <option value="15">+3 horas</option>
+      <option value="15">Urgente (2-3 dias)</option>
     </select>
     <button onclick="calcularOrcamento()">Calcular</button>
     <div class="resultado" id="resultado"></div>
-  </section>
-  <section id="contact" class="reveal">
-    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: #00f0ff; text-shadow: 2px 2px 6px #000; animation: glowText 2s ease-in-out infinite alternate;">Entre em Contato</h2>
-    <div class="hud">
-      <p style="font-size: 1.1rem; color: #fff;">Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
-      <p><strong>Email:</strong> <a href="mailto:lucasdiniz9912855@gmail.com">lucasdiniz9912855@gmail.com</a></p>
-      <p><strong>Discord:</strong> OPZ DINIZ#3921</p>
-      <p><strong>Instagram:</strong> <a href="https://instagram.com/dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
-      <p><strong>TikTok:</strong> <a href="https://tiktok.com/@dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
+    <div class="arrow">
+      <a href="#contact"><img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Seta para baixo"></a>
     </div>
-  </section>
-  <script>
-    ScrollReveal().reveal('.reveal', {
-      distance: '60px',
-      duration: 1200,
-      easing: 'ease-in-out',
-      origin: 'bottom',
-      interval: 200
-    });
+  </section>  <section id="contact" class="contact">
+    <h2>Entre em Contato</h2>
+    <div class="hud">
+      <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
+      <a href="mailto:lucasdiniz9912855@gmail.com">✉️ lucasdiniz9912855@gmail.com</a>
+      <a href="https://instagram.com/dnzdesigner0" target="_blank">📸 Instagram: @dnzdesigner0</a>
+      <a href="https://discord.com/users/OPZ%20DINIZ%233921" target="_blank">💬 Discord: OPZ DINIZ#3921</a>
+      <a href="https://tiktok.com/@dnzdesigner0" target="_blank">🎥 TikTok: @dnzdesigner0</a>
+    </div>
+  </section>  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>  <script>
     particlesJS("particles-js", {
       particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#ff00cc" },
+        color: { value: "#7f5af0" },
         shape: { type: "circle" },
-        opacity: { value: 0.4 },
+        opacity: { value: 0.3 },
         size: { value: 3, random: true },
         line_linked: {
           enable: true,
           distance: 150,
-          color: "#ff00cc",
-          opacity: 0.3,
+          color: "#7f5af0",
+          opacity: 0.25,
           width: 1
         },
         move: { enable: true, speed: 2 }
@@ -205,13 +204,12 @@
       },
       retina_detect: true
     });
+
     function calcularOrcamento() {
       const tipo = parseInt(document.getElementById('tipo').value);
       const prazo = parseInt(document.getElementById('prazo').value);
-      const horas = parseInt(document.getElementById('horas').value);
-      const total = tipo + prazo + horas;
+      const total = tipo + prazo;
       document.getElementById('resultado').innerHTML = `Valor estimado: R$${total},00`;
     }
-  </script>
-</body>
+  </script></body>
 </html>
