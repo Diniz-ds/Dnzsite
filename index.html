@@ -1,142 +1,158 @@
-<!DOCTYPE html><html lang="pt-br">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DNZ | Portfólio Gamer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DNZ Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', sans-serif;
+      cursor: url('cursor-gamer.png'), auto;
       background: #111;
-      color: #eee;
-      scroll-behavior: smooth;
-    }/* HERO */
-#hero {
-  height: 100vh;
-  background: url('bg.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-}
-.hero-content h1 {
-  font-size: 3rem;
-  background: linear-gradient(90deg, #00f0ff, #ff00e0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
-  margin-bottom: 1rem;
-}
-.hero-content p {
-  font-size: 1.2rem;
-  color: rgba(255,255,255,0.8);
-}
-.scroll-down {
-  margin-top: 40px;
-  font-size: 2.5rem;
-  color: #00f0ff;
-  animation: bounce 2s infinite;
-  cursor: pointer;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(10px); }
-}
-
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-h2 {
-  font-size: 2rem;
-  color: #00f0ff;
-  text-align: center;
-  margin-bottom: 20px;
-}
-p {
-  color: #ccc;
-  line-height: 1.6;
-}
-
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-.galeria img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
-  transition: transform 0.3s;
-}
-.galeria img:hover {
-  transform: scale(1.05);
-}
-
-.contato a {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  background: #00f0ff;
-  color: #111;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-.contato a:hover {
-  background: #00c0cc;
-}
-footer {
-  text-align: center;
-  padding: 40px 0;
-  color: #555;
-}
-
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .portfolio-images img:hover {
+      box-shadow: 0 0 25px #00ffff;
+      transform: scale(1.08);
+    }
+    .hud {
+      border: 2px solid #00ffff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 20px #00ffff80;
+    }
+    .hud-title {
+      font-family: 'Press Start 2P', monospace;
+      color: #00ffff;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+    .hud-desc {
+      font-size: 1rem;
+      color: #fff;
+    }
+    .orcamento {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .orcamento select, .orcamento button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    .orcamento .resultado {
+      margin-top: 20px;
+      color: #0ff;
+      font-size: 1.2rem;
+    }
+    .hero h1 {
+      color: #c0c0c0;
+    }
   </style>
 </head>
 <body>
-  <header id="hero">
-    <div class="hero-content">
-      <h1>DESIGNS LENDÁRIOS PARA MENTES GAMERS</h1>
-      <p>Artes épicas com identidade visual gamer e cultura anime</p>
-      <div class="scroll-down" onclick="document.querySelector('#sobre').scrollIntoView({ behavior: 'smooth' });">&#8595;</div>
-    </div>
-  </header>  <section id="sobre" class="reveal">
+  <div id="particles-js"></div>
+  <section class="hero reveal" id="hero">
+    <h1>DNZ DESIGNER<br><span style="font-size: 1rem; font-family: 'Press Start 2P'; color: #00ffff;">FORÇA VISUAL DE ELITE</span></h1>
+    <div class="arrow"><a href="#about">⬇️</a></div>
+  </section>  <section id="about" class="reveal">
     <h2>Sobre Mim</h2>
-    <p>Sou Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
-    <p>Trabalho com Canva, mas domino ferramentas como Photoshop, Illustrator e Figma. Estou sempre buscando evoluir como designer criativo e fechar parcerias que transformem ideias em realidade.</p>
-  </section>  <section id="portfolio" class="reveal">
-    <h2>Portfólio</h2>
-    <div class="galeria">
-      <img src="arte-de-maldita.jpg" alt="A Maldição Tem Forma" />
-      <img src="minato.jpg" alt="Minato Free Fire" />
-      <img src="marcos-luffy.jpg" alt="Marcos D. Luffy" />
-      <img src="ego-ghost.jpg" alt="Ego Ghost" />
-      <img src="artemis.jpg" alt="Artemis" />
+    <div class="hud">
+      <div class="hud-title">CLASS: VISUAL STRATEGIST | LEVEL: 21</div>
+      <div class="hud-desc">
+        <p>Sou o Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
+        <p>Trabalho com Canva, mas tenho domínio e conhecimento em ferramentas como Photoshop, Illustrator e Figma, o que me permite criar desde posts carrossel e identidades visuais até artes que elevam o posicionamento de marcas no Instagram.</p>
+        <p>Venho de uma trajetória administrativa, o que me deu organização, responsabilidade e disciplina — habilidades que hoje aplico em cada projeto visual que desenvolvo. Estou em constante evolução, buscando aprender e crescer como designer criativo, com o objetivo de me tornar uma referência no meio criativo e fechar parcerias que transformem ideias em realidade.</p>
+      </div>
     </div>
-  </section>  <section id="contato" class="reveal contato">
-    <h2>Contato</h2>
-    <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab?</p>
-    <a href="mailto:lucasdiniz9912855@gmail.com">✉️ Email</a>
-    <a href="https://instagram.com/dnzdesigner0" target="_blank">📸 Instagram</a>
-    <a href="https://discord.com/users/OPZ%20DINIZ%233921" target="_blank">💬 Discord</a>
-    <p style="margin-top:20px;font-style:italic;">Artes personalizadas entre R$30 e R$40</p>
-  </section>  <footer>
-    © 2025 DNZ DESIGN FORCE | lucasdiniz9912855@gmail.com
-  </footer>  <script>
+    <div class="arrow"><a href="#portfolio">⬇️</a></div>
+  </section>  <section id="portfolio" class="reveal">
+    <h2>Meus Designs</h2>
+    <div class="portfolio-images">
+      <img src="sukuna.png" alt="Design Sukuna" />
+      <img src="minato.png" alt="Design Minato" />
+      <img src="luffy.jpg" alt="Design Luffy" />
+      <img src="artemis.png" alt="Design Artemis" />
+      <img src="ego.jpg" alt="Design Ego" />
+    </div>
+    <div class="arrow"><a href="#orcamento">⬇️</a></div>
+  </section>  <section id="orcamento" class="orcamento reveal">
+    <h2>Simulador de Orçamento</h2>
+    <label>Tipo de Arte:</label>
+    <select id="tipo">
+      <option value="30">Post Carrossel</option>
+      <option value="35">Arte para Feed</option>
+      <option value="40">Logo Gamer Simples</option>
+      <option value="40">Arte Anime/Collab</option>
+    </select>
+    <label>Prazo:</label>
+    <select id="prazo">
+      <option value="0">Normal (5-7 dias)</option>
+      <option value="10">Urgente (3 dias)</option>
+    </select>
+    <button onclick="calcularOrcamento()">Calcular</button>
+    <div class="resultado" id="resultado"></div>
+  </section>  <section id="contact" class="reveal">
+    <h2>Entre em Contato</h2>
+    <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
+    <p><strong>Email:</strong> <a href="mailto:lucasdiniz9912855@gmail.com">lucasdiniz9912855@gmail.com</a></p>
+    <p><strong>Discord:</strong> OPZ DINIZ#3921</p>
+  </section>  <script>
     ScrollReveal().reveal('.reveal', {
-      distance: '40px',
-      duration: 1000,
+      distance: '60px',
+      duration: 1200,
+      easing: 'ease-in-out',
       origin: 'bottom',
       interval: 200
     });
+
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#00ffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.4 },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00ffff",
+          opacity: 0.3,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100, duration: 0.4 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+
+    function calcularOrcamento() {
+      const tipo = parseInt(document.getElementById('tipo').value);
+      const prazo = parseInt(document.getElementById('prazo').value);
+      const total = tipo + prazo;
+      document.getElementById('resultado').innerHTML = `Valor estimado: R$${total},00`;
+    }
   </script></body>
 </html>
