@@ -14,18 +14,19 @@
       background-size: cover;
       color: #fff;
     }.section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
 h1, h2 {
   color: #fff;
   text-shadow: 2px 2px 5px #000;
+  margin-bottom: 30px;
 }
 
 .arrow {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 30px;
   animation: bounce 2s infinite;
 }
 
@@ -42,19 +43,25 @@ h1, h2 {
 
 .hud, .section-box {
   background: rgba(0,0,0,0.7);
-  padding: 20px;
+  padding: 30px;
   border: 2px solid #0ff;
   border-radius: 10px;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto 40px;
   box-shadow: 0 0 20px #0ff5;
 }
 
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 .portfolio-images img {
-  max-width: 90%;
-  margin: 10px;
+  max-width: 280px;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .portfolio-images img:hover {
@@ -62,20 +69,29 @@ h1, h2 {
   box-shadow: 0 0 20px #0ff;
 }
 
-.orcamento {
-  background-color: #111;
-  padding: 30px;
-}
-
 .orcamento select, .orcamento button {
   margin: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 1rem;
   border-radius: 5px;
+  border: 2px solid #0ff;
+  background: transparent;
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.orcamento button {
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.orcamento button:hover {
+  background: #0ff;
+  color: #000;
 }
 
 #resultado {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 1.2rem;
   color: #0ff;
 }
@@ -83,6 +99,10 @@ h1, h2 {
 a {
   color: #0ff;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
   </style>
