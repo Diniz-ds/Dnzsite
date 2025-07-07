@@ -1,119 +1,119 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html><html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DNZ | Portfólio Gamer</title>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', sans-serif;
-      color: #eee;
       background: #111;
+      color: #eee;
       scroll-behavior: smooth;
-    }
-    /* HERO */
-    #hero {
-      position: relative;
-      height: 100vh;
-      background: url('bg.jpg') no-repeat center center;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    #hero h1 {
-      font-size: 3rem;
-      text-shadow: 0 0 20px #00f0ff;
-    }
-    #hero .arrow {
-      margin-top: 40px;
-      font-size: 3rem;
-      color: #00f0ff;
-      animation: blink 1.5s infinite;
-      text-decoration: none;
-    }
-    @keyframes blink {
-      0%,100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
+    }/* HERO */
+#hero {
+  height: 100vh;
+  background: url('bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00f0ff, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.8);
+}
+.scroll-down {
+  margin-top: 40px;
+  font-size: 2.5rem;
+  color: #00f0ff;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
 
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      font-size: 2rem;
-      color: #00f0ff;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    p {
-      font-size: 1rem;
-      color: #ccc;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-    .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .galeria img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
-      transition: transform 0.3s ease;
-    }
-    .galeria img:hover {
-      transform: scale(1.05);
-    }
-    .contato {
-      text-align: center;
-    }
-    .contato a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background: #00f0ff;
-      color: #111;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .contato a:hover {
-      background: #00c0cc;
-    }
-    footer {
-      text-align: center;
-      color: #555;
-      font-size: 0.9rem;
-      padding: 40px 0;
-    }
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+h2 {
+  font-size: 2rem;
+  color: #00f0ff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.galeria img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+  transition: transform 0.3s;
+}
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+.contato a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #00f0ff;
+  color: #111;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.contato a:hover {
+  background: #00c0cc;
+}
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: #555;
+}
+
   </style>
 </head>
 <body>
-  <section id="hero">
-    <h1>DESIGNS LENDÁRIOS PARA MENTES GAMERS</h1>
-    <a href="#sobre" class="arrow">↓</a>
-  </section>
-
-  <section id="sobre" class="reveal">
+  <header id="hero">
+    <div class="hero-content">
+      <h1>DESIGNS LENDÁRIOS PARA MENTES GAMERS</h1>
+      <p>Artes épicas com identidade visual gamer e cultura anime</p>
+      <div class="scroll-down" onclick="document.querySelector('#sobre').scrollIntoView({ behavior: 'smooth' });">&#8595;</div>
+    </div>
+  </header>  <section id="sobre" class="reveal">
     <h2>Sobre Mim</h2>
     <p>Sou Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
-    <p>Trabalho com Canva, mas também domino ferramentas como Photoshop, Illustrator e Figma, criando desde posts carrossel e identidades visuais até artes que elevam o posicionamento de marcas no Instagram.</p>
-    <p>Venho de uma trajetória administrativa, o que me deu organização, responsabilidade e disciplina — habilidades que aplico em cada projeto visual. Estou em constante evolução e busco me tornar referência no meio criativo, fechando parcerias que transformem ideias em realidade.</p>
-  </section>
-
-  <section id="portfolio" class="reveal">
+    <p>Trabalho com Canva, mas domino ferramentas como Photoshop, Illustrator e Figma. Estou sempre buscando evoluir como designer criativo e fechar parcerias que transformem ideias em realidade.</p>
+  </section>  <section id="portfolio" class="reveal">
     <h2>Portfólio</h2>
     <div class="galeria">
       <img src="arte-de-maldita.jpg" alt="A Maldição Tem Forma" />
@@ -122,31 +122,21 @@
       <img src="ego-ghost.jpg" alt="Ego Ghost" />
       <img src="artemis.jpg" alt="Artemis" />
     </div>
-    <div style="text-align:center; margin-top:40px;">
-      <a href="#contato" class="arrow">↓</a>
-    </div>
-  </section>
-
-  <section id="contato" class="reveal contato">
+  </section>  <section id="contato" class="reveal contato">
     <h2>Contato</h2>
     <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab?</p>
     <a href="mailto:lucasdiniz9912855@gmail.com">✉️ Email</a>
     <a href="https://instagram.com/dnzdesigner0" target="_blank">📸 Instagram</a>
-    <a href="https://discord.com/users/OPZ%20DINIZ%233921" target="_blank">💬 Discord: OPZ DINIZ#3921</a>
-    <p style="margin-top:20px;font-style:italic;">Preços entre R$30 e R$40 por arte personalizada.</p>
-  </section>
-
-  <footer>
-    © 2025 DNZ DESIGN FORCE | contato: lucasdiniz9912855@gmail.com
-  </footer>
-
-  <script>
+    <a href="https://discord.com/users/OPZ%20DINIZ%233921" target="_blank">💬 Discord</a>
+    <p style="margin-top:20px;font-style:italic;">Artes personalizadas entre R$30 e R$40</p>
+  </section>  <footer>
+    © 2025 DNZ DESIGN FORCE | lucasdiniz9912855@gmail.com
+  </footer>  <script>
     ScrollReveal().reveal('.reveal', {
       distance: '40px',
       duration: 1000,
       origin: 'bottom',
       interval: 200
     });
-  </script>
-</body>
+  </script></body>
 </html>
