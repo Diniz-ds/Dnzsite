@@ -1,119 +1,115 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DNZ | Portfólio Gamer</title>
+  <title>DNZ Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
-    * {margin:0;padding:0;box-sizing:border-box;}
-    body, html {height:100%;font-family:'Segoe UI',sans-serif;color:#fff;background:#111;}
-    .hero {
-      position: relative;
-      background: url('bg.jpg') center/cover no-repeat;
-      height:100vh; display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
+    body {
+      cursor: url('cursor-gamer.png'), auto;
     }
-    .hero h1 {
-      font-size:3rem;
-      text-shadow:0 0 15px rgba(0,0,0,0.6);
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
     }
-    .hero .slogan {
-      font-size:1.2rem;
-      margin:15px 0;
-      max-width:600px;
-      text-shadow:0 0 10px rgba(0,0,0,0.6);
+    .portfolio-images img:hover {
+      box-shadow: 0 0 25px #ff00cc;
+      transform: scale(1.08);
     }
-    .btn {
-      background:#ff0055;
-      padding:12px 24px;
-      border:none;
-      border-radius:8px;
-      color:#fff;
-      font-size:1rem;
-      text-decoration:none;
-      margin:10px;
+    .hud {
+      border: 2px solid #00ffff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 20px #00ffff80;
     }
-    .btn:hover {background:#e6004c;}
-    .scroll-down {
-      margin-top:40px;
-      animation: bounce 2s infinite;
+    .hud-title {
+      font-family: 'Press Start 2P', monospace;
+      color: #00ffff;
+      font-size: 1rem;
+      margin-bottom: 15px;
     }
-    @keyframes bounce {
-      0%,100% {transform: translateY(0);}
-      50% {transform: translateY(10px);}
+    .hud-desc {
+      font-size: 1rem;
+      color: #fff;
     }
-    section {
-      padding:60px 20px;
-      max-width:900px;
-      margin:0 auto;
-    }
-    h2 {font-size:2rem; color:#ff0055; margin-bottom:20px;}
-    p {font-size:1rem; color:#ddd; line-height:1.6; margin-bottom:15px;}
-    .galeria {
-      display:flex;
-      flex-wrap:wrap;
-      gap:20px;
-      justify-content:center;
-      margin-top:30px;
-    }
-    .galeria img {
-      width:200px;
-      border-radius:12px;
-      box-shadow:0 0 15px rgba(255,0,85,0.5);
-      transition:transform .3s ease;
-    }
-    .galeria img:hover {transform:scale(1.05);}
-    footer {text-align:center; padding:40px 0; color:#888;}
   </style>
 </head>
 <body>
-  <!-- Hero -->
-  <section class="hero">
-    <h1>DESIGNS LENDÁRIOS PARA MENTES GAMERS</h1>
-    <p class="slogan">Criações visuais que transformam paixão em identidade.</p>
-    <a href="https://instagram.com/dnzdesigner0" class="btn" target="_blank">🎮 Ver Portfólio no Instagram</a>
-    <div class="scroll-down">
-      <a href="#sobre"><img src="seta-baixo.png" alt="Descer"></a>
-    </div>
-  </section>
-
-  <!-- Sobre Mim -->
-  <section id="sobre">
+  <div id="particles-js"></div>
+  <section class="hero reveal" id="hero">
+    <h1>DNZ DESIGNER<br><span style="font-size: 1rem; font-family: 'Press Start 2P'; color: #ff00cc;">FORÇA VISUAL DE ELITE</span></h1>
+    <div class="arrow"><a href="#about">⬇️</a></div>
+  </section>  <section id="about" class="reveal">
     <h2>Sobre Mim</h2>
-    <p>Sou o Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
-    <p>Trabalho com Canva, mas tenho domínio e conhecimento em ferramentas como Photoshop, Illustrator e Figma, o que me permite criar desde posts carrossel e identidades visuais até artes que elevam o posicionamento de marcas no Instagram.</p>
-    <p>Venho de uma trajetória administrativa, o que me deu organização, responsabilidade e disciplina — habilidades que hoje aplico em cada projeto visual que desenvolvo. Estou em constante evolução, buscando aprender e crescer como designer criativo, com o objetivo de me tornar uma referência no meio criativo e fechar parcerias que transformem ideias em realidade.</p>
-    <div class="scroll-down">
-      <a href="#portfolio"><img src="seta-baixo.png" alt="Descer"></a>
+    <div class="hud">
+      <div class="hud-title">CLASS: VISUAL STRATEGIST | LEVEL: 21</div>
+      <div class="hud-desc">
+        <p>Sou o Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
+        <p>Trabalho com Canva, mas tenho domínio e conhecimento em ferramentas como Photoshop, Illustrator e Figma, o que me permite criar desde posts carrossel e identidades visuais até artes que elevam o posicionamento de marcas no Instagram.</p>
+        <p>Venho de uma trajetória administrativa, o que me deu organização, responsabilidade e disciplina — habilidades que hoje aplico em cada projeto visual que desenvolvo. Estou em constante evolução, buscando aprender e crescer como designer criativo, com o objetivo de me tornar uma referência no meio criativo e fechar parcerias que transformem ideias em realidade.</p>
+      </div>
     </div>
-  </section>
-
-  <!-- Portfólio -->
-  <section id="portfolio">
+    <div class="arrow"><a href="#portfolio">⬇️</a></div>
+  </section>  <section id="portfolio" class="reveal">
     <h2>Meus Designs</h2>
-    <div class="galeria">
-      <img src="artemis.png" alt="Artemis">
-      <img src="ego.jpg" alt="Ego Ghost">
-      <img src="minato.png" alt="Minato">
-      <img src="luffy.jpg" alt="Luffy">
-      <img src="sukuna.png" alt="Sukuna">
+    <div class="portfolio-images">
+      <img src="sukuna.png" alt="Design Sukuna" />
+      <img src="minato.png" alt="Design Minato" />
+      <img src="luffy.jpg" alt="Design Luffy" />
+      <img src="artemis.png" alt="Design Artemis" />
+      <img src="ego.jpg" alt="Design Ego" />
     </div>
-    <div class="scroll-down">
-      <a href="#contato"><img src="seta-baixo.png" alt="Descer"></a>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chame:</p>
-    <p><strong>Instagram:</strong> <a href="https://instagram.com/dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
+    <div class="arrow"><a href="#contact">⬇️</a></div>
+  </section>  <section id="contact" class="reveal">
+    <h2>Entre em Contato</h2>
+    <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
     <p><strong>Email:</strong> <a href="mailto:lucasdiniz9912855@gmail.com">lucasdiniz9912855@gmail.com</a></p>
     <p><strong>Discord:</strong> OPZ DINIZ#3921</p>
-  </section>
+    <a href="https://instagram.com/dnzdesigner0" target="_blank">🎮 Ver Portfólio no Instagram</a>
+  </section>  <script>
+    ScrollReveal().reveal('.reveal', {
+      distance: '60px',
+      duration: 1200,
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      interval: 200
+    });
 
-  <footer>© 2025 DNZ Designer</footer>
-</body>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#ff00cc" },
+        shape: { type: "circle" },
+        opacity: { value: 0.4 },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ff00cc",
+          opacity: 0.3,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100, duration: 0.4 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script></body>
 </html>
