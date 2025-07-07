@@ -24,9 +24,15 @@ h1, h2 {
 }
 
 .arrow {
-  font-size: 2rem;
-  animation: bounce 2s infinite;
+  display: inline-block;
   margin-top: 20px;
+  animation: bounce 2s infinite;
+}
+
+.arrow svg {
+  width: 40px;
+  height: 40px;
+  fill: #00ffff;
 }
 
 @keyframes bounce {
@@ -34,12 +40,12 @@ h1, h2 {
   50% { transform: translateY(-10px); }
 }
 
-.hud {
+.hud, .section-box {
   background: rgba(0,0,0,0.7);
   padding: 20px;
   border: 2px solid #0ff;
   border-radius: 10px;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   box-shadow: 0 0 20px #0ff5;
 }
@@ -83,8 +89,10 @@ a {
 </head>
 <body>
   <section class="section" id="hero">
-    <h1>ENTRE NO UNIVERSO VISUAL DE UM DESIGNER DE ELITE</h1>
-    <div class="arrow"><a href="#about">🔽</a></div>
+    <div class="section-box">
+      <h1>ENTRE NO UNIVERSO VISUAL DE UM DESIGNER DE ELITE</h1>
+      <div class="arrow"><a href="#about"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21l-12-18h24z"/></svg></a></div>
+    </div>
   </section>  <section class="section" id="about">
     <h2>Sobre Mim</h2>
     <div class="hud">
@@ -92,41 +100,47 @@ a {
       <p>Trabalho com Canva, mas tenho domínio e conhecimento em ferramentas como Photoshop, Illustrator e Figma, o que me permite criar desde posts carrossel e identidades visuais até artes que elevam o posicionamento de marcas no Instagram.</p>
       <p>Venho de uma trajetória administrativa, o que me deu organização, responsabilidade e disciplina — habilidades que hoje aplico em cada projeto visual que desenvolvo. Estou em constante evolução, buscando aprender e crescer como designer criativo, com o objetivo de me tornar uma referência no meio criativo e fechar parcerias que transformem ideias em realidade.</p>
     </div>
-    <div class="arrow"><a href="#portfolio">🔽</a></div>
+    <div class="arrow"><a href="#portfolio"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21l-12-18h24z"/></svg></a></div>
   </section>  <section class="section" id="portfolio">
     <h2>Meus Designs</h2>
-    <div class="portfolio-images">
-      <img src="sukuna.png" alt="Arte Sukuna" />
-      <img src="minato.png" alt="Arte Minato" />
-      <img src="luffy.jpg" alt="Arte Luffy" />
-      <img src="artemis.png" alt="Arte Artemis" />
-      <img src="ego.jpg" alt="Arte Ego Ghost" />
+    <div class="section-box">
+      <div class="portfolio-images">
+        <img src="sukuna.png" alt="Arte Sukuna" />
+        <img src="minato.png" alt="Arte Minato" />
+        <img src="luffy.jpg" alt="Arte Luffy" />
+        <img src="artemis.png" alt="Arte Artemis" />
+        <img src="ego.jpg" alt="Arte Ego Ghost" />
+      </div>
     </div>
-    <div class="arrow"><a href="#orcamento">🔽</a></div>
+    <div class="arrow"><a href="#orcamento"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21l-12-18h24z"/></svg></a></div>
   </section>  <section class="section orcamento" id="orcamento">
     <h2>Simulador de Orçamento</h2>
-    <select id="tipo">
-      <option value="40">Post Carrossel</option>
-      <option value="45">Arte Feed</option>
-      <option value="50">Logo Gamer Simples</option>
-      <option value="60">Logo Gamer Avançada</option>
-      <option value="50">Arte Collab / Anime</option>
-      <option value="50">Thumbnail</option>
-    </select>
-    <select id="prazo">
-      <option value="0">Prazo Normal (3 a 5 dias)</option>
-      <option value="20">Urgente (1 a 2 dias)</option>
-    </select>
-    <button onclick="calcularOrcamento()">Calcular</button>
-    <div id="resultado"></div>
-    <div class="arrow"><a href="#contact">🔽</a></div>
+    <div class="section-box">
+      <select id="tipo">
+        <option value="40">Post Carrossel</option>
+        <option value="45">Arte Feed</option>
+        <option value="50">Logo Gamer Simples</option>
+        <option value="60">Logo Gamer Avançada</option>
+        <option value="50">Arte Collab / Anime</option>
+        <option value="50">Thumbnail</option>
+      </select>
+      <select id="prazo">
+        <option value="0">Prazo Normal (3 a 5 dias)</option>
+        <option value="20">Urgente (1 a 2 dias)</option>
+      </select>
+      <button onclick="calcularOrcamento()">Calcular</button>
+      <div id="resultado"></div>
+    </div>
+    <div class="arrow"><a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21l-12-18h24z"/></svg></a></div>
   </section>  <section class="section" id="contact">
     <h2>Entre em Contato</h2>
-    <p>Me chama para colaborações, ideias ou projetos!</p>
-    <p>Email: <a href="mailto:lucasdiniz9912855@gmail.com">lucasdiniz9912855@gmail.com</a></p>
-    <p>Discord: OPZ DINIZ#3921</p>
-    <p>Instagram: <a href="https://instagram.com/dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
-    <p>TikTok: <a href="https://tiktok.com/@dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
+    <div class="section-box">
+      <p>Me chama para colaborações, ideias ou projetos!</p>
+      <p>Email: <a href="mailto:lucasdiniz9912855@gmail.com">lucasdiniz9912855@gmail.com</a></p>
+      <p>Discord: OPZ DINIZ#3921</p>
+      <p>Instagram: <a href="https://instagram.com/dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
+      <p>TikTok: <a href="https://tiktok.com/@dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
+    </div>
   </section>  <script>
     ScrollReveal().reveal('.section', {
       distance: '40px',
