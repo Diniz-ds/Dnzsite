@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DNZ Designer</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
@@ -15,104 +13,108 @@
       background-color: #121212;
       color: #fff;
       cursor: url('cursor-gamer.png'), auto;
-    }
+    }#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
-    #particles-js {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
+.hero {
+  height: 100vh;
+  background: url('bg.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-    .hero {
-      height: 100vh;
-      background: url('bg.jpg') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+.hero h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
 
-    .hero h1 {
-      font-size: 2.5rem;
-      color: #00ffff;
-      text-shadow: 0 0 30px #00ffff, 0 0 10px #00ffff;
-    }
+.arrow a {
+  font-size: 2rem;
+  color: #00f0ff;
+  animation: pulseDown 2s infinite;
+  display: inline-block;
+}
 
-    .arrow a {
-      font-size: 2rem;
-      color: #00f0ff;
-    }
+@keyframes pulseDown {
+  0%, 100% { transform: translateY(0); opacity: 0.8; }
+  50% { transform: translateY(10px); opacity: 1; }
+}
 
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
 
-    h2 {
-      color: #00f0ff;
-      font-family: 'Press Start 2P', monospace;
-      margin-bottom: 30px;
-    }
+h2 {
+  color: #00f0ff;
+  font-family: 'Press Start 2P', monospace;
+  margin-bottom: 30px;
+}
 
-    .hud {
-      border: 2px solid #00ffff;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      border-radius: 10px;
-      background: rgba(0, 0, 0, 0.4);
-      box-shadow: 0 0 20px #00ffff80;
-    }
+.hud {
+  border: 2px solid #00ffff;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px #00ffff80;
+}
 
-    .portfolio-images {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
-    .portfolio-images img {
-      width: 280px;
-      border-radius: 12px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
+.portfolio-images img {
+  width: 280px;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-    .portfolio-images img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px #00f0ff;
-    }
+.portfolio-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00f0ff;
+}
 
-    .orcamento select, .orcamento button {
-      padding: 10px;
-      margin: 10px;
-      border-radius: 8px;
-      border: none;
-      font-size: 1rem;
-    }
+.orcamento select, .orcamento button, .orcamento input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
 
-    .resultado {
-      color: #0ff;
-      font-size: 1.2rem;
-      margin-top: 20px;
-    }
+.resultado {
+  color: #0ff;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
 
-    a {
-      color: #00f0ff;
-      text-decoration: none;
-    }
+a {
+  color: #00f0ff;
+  text-decoration: none;
+}
+
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>
-
-  <section class="hero reveal" id="hero">
+  <div id="particles-js"></div>  <section class="hero reveal" id="hero">
     <h1>DESIGNS LENDÁRIOS PARA MENTES GAMERS</h1>
     <div class="arrow"><a href="#about">⬇️</a></div>
-  </section>
-
-  <section id="about" class="reveal">
+  </section>  <section id="about" class="reveal">
     <h2>Sobre Mim</h2>
     <div class="hud">
       <div class="hud-title">CLASS: VISUAL STRATEGIST | LEVEL: 21</div>
@@ -123,9 +125,7 @@
       </div>
     </div>
     <div class="arrow"><a href="#portfolio">⬇️</a></div>
-  </section>
-
-  <section id="portfolio" class="reveal">
+  </section>  <section id="portfolio" class="reveal">
     <h2>Meus Designs</h2>
     <div class="portfolio-images">
       <img src="sukuna.png" alt="Design Sukuna" />
@@ -135,9 +135,7 @@
       <img src="ego.jpg" alt="Design Ego" />
     </div>
     <div class="arrow"><a href="#orcamento">⬇️</a></div>
-  </section>
-
-  <section id="orcamento" class="orcamento reveal">
+  </section>  <section id="orcamento" class="orcamento reveal">
     <h2>Simulador de Orçamento</h2>
     <label>Tipo de Arte:</label>
     <select id="tipo">
@@ -148,25 +146,30 @@
       <option value="3.5">Logo Gamer Complexa (3.5h)</option>
       <option value="3.5">Arte Anime/Collab (3.5h)</option>
     </select>
+    <br>
+    <label>Horas adicionais:</label>
+    <input type="number" id="horasExtras" min="0" step="0.5" value="0">
+    <br>
     <label>Prazo:</label>
     <select id="prazo">
       <option value="0">Normal (5-7 dias)</option>
       <option value="1">Urgente (até 48h)</option>
     </select>
+    <br>
+    <label>Dias adicionais de prazo reduzido:</label>
+    <input type="number" id="diasUrgencia" min="0" max="5" value="0">
+    <br>
     <button onclick="calcularOrcamento()">Calcular</button>
     <div class="resultado" id="resultado"></div>
     <div class="arrow"><a href="#contact">⬇️</a></div>
-  </section>
-
-  <section id="contact" class="reveal">
-    <h2>Entre em Contato</h2>
-    <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
-    <p><strong>Email:</strong> <a href="mailto:lucasdiniz9912855@gmail.com">lucasdiniz9912855@gmail.com</a></p>
-    <p><strong>Discord:</strong> OPZ DINIZ#3921</p>
-    <p><strong>Instagram:</strong> <a href="https://instagram.com/dnzdesigner0" target="_blank">@dnzdesigner0</a></p>
-  </section>
-
-  <script>
+  </section>  <section id="contact" class="reveal" style="background: #1a1a1a; padding: 60px 20px; border-top: 2px solid #00f0ff; box-shadow: 0 0 20px #00f0ff80;">
+    <h2 style="color: #00f0ff; font-family: 'Press Start 2P', monospace;">Entre em Contato</h2>
+    <p style="font-size: 1.1rem; color: #ccc;">Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
+    <p><strong>Email:</strong> <a href="mailto:lucasdiniz9912855@gmail.com" style="color: #00ffff;">lucasdiniz9912855@gmail.com</a></p>
+    <p><strong>Discord:</strong> <span style="color: #00ffff;">OPZ DINIZ#3921</span></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/dnzdesigner0" target="_blank" style="color: #00ffff;">@dnzdesigner0</a></p>
+    <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@dnzdesigner0" target="_blank" style="color: #00ffff;">@dnzdesigner0</a></p>
+  </section>  <script>
     ScrollReveal().reveal('.reveal', {
       distance: '60px',
       duration: 1200,
@@ -207,12 +210,15 @@
     function calcularOrcamento() {
       const valorHora = 15;
       const tipo = parseFloat(document.getElementById('tipo').value);
+      const horasExtras = parseFloat(document.getElementById('horasExtras').value);
+      const diasUrgencia = parseInt(document.getElementById('diasUrgencia').value);
       const prazo = parseInt(document.getElementById('prazo').value);
-      let precoBase = tipo * valorHora;
-      let adicionalUrgencia = prazo === 1 ? precoBase * 0.5 : 0;
+
+      let precoBase = (tipo + horasExtras) * valorHora;
+      let adicionalUrgencia = prazo === 1 ? precoBase * (0.1 * diasUrgencia) : 0;
       const total = precoBase + adicionalUrgencia;
+
       document.getElementById('resultado').innerHTML = `Valor estimado: R$${total.toFixed(2)}`;
     }
-  </script>
-</body>
+  </script></body>
 </html>
