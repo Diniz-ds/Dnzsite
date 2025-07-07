@@ -1,115 +1,152 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DNZ Designer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+  <title>DNZ | Portfólio Gamer</title>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      cursor: url('cursor-gamer.png'), auto;
+      font-family: 'Segoe UI', sans-serif;
+      color: #eee;
+      background: #111;
+      scroll-behavior: smooth;
     }
-    #particles-js {
-      position: fixed;
+    /* HERO */
+    #hero {
+      position: relative;
+      height: 100vh;
+      background: url('bg.jpg') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #hero h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 20px #00f0ff;
+    }
+    #hero .arrow {
+      margin-top: 40px;
+      font-size: 3rem;
+      color: #00f0ff;
+      animation: blink 1.5s infinite;
+      text-decoration: none;
+    }
+    @keyframes blink {
+      0%,100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #00f0ff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p {
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .galeria img {
       width: 100%;
-      height: 100%;
-      z-index: -1;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+      transition: transform 0.3s ease;
     }
-    .portfolio-images img:hover {
-      box-shadow: 0 0 25px #ff00cc;
-      transform: scale(1.08);
+    .galeria img:hover {
+      transform: scale(1.05);
     }
-    .hud {
-      border: 2px solid #00ffff;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 800px;
-      border-radius: 10px;
-      background: rgba(0, 0, 0, 0.4);
-      box-shadow: 0 0 20px #00ffff80;
+    .contato {
+      text-align: center;
     }
-    .hud-title {
-      font-family: 'Press Start 2P', monospace;
-      color: #00ffff;
-      font-size: 1rem;
-      margin-bottom: 15px;
+    .contato a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #00f0ff;
+      color: #111;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
     }
-    .hud-desc {
-      font-size: 1rem;
-      color: #fff;
+    .contato a:hover {
+      background: #00c0cc;
+    }
+    footer {
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+      padding: 40px 0;
     }
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>
-  <section class="hero reveal" id="hero">
-    <h1>DNZ DESIGNER<br><span style="font-size: 1rem; font-family: 'Press Start 2P'; color: #ff00cc;">FORÇA VISUAL DE ELITE</span></h1>
-    <div class="arrow"><a href="#about">⬇️</a></div>
-  </section>  <section id="about" class="reveal">
+  <section id="hero">
+    <h1>DESIGNS LENDÁRIOS PARA MENTES GAMERS</h1>
+    <a href="#sobre" class="arrow">↓</a>
+  </section>
+
+  <section id="sobre" class="reveal">
     <h2>Sobre Mim</h2>
-    <div class="hud">
-      <div class="hud-title">CLASS: VISUAL STRATEGIST | LEVEL: 21</div>
-      <div class="hud-desc">
-        <p>Sou o Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
-        <p>Trabalho com Canva, mas tenho domínio e conhecimento em ferramentas como Photoshop, Illustrator e Figma, o que me permite criar desde posts carrossel e identidades visuais até artes que elevam o posicionamento de marcas no Instagram.</p>
-        <p>Venho de uma trajetória administrativa, o que me deu organização, responsabilidade e disciplina — habilidades que hoje aplico em cada projeto visual que desenvolvo. Estou em constante evolução, buscando aprender e crescer como designer criativo, com o objetivo de me tornar uma referência no meio criativo e fechar parcerias que transformem ideias em realidade.</p>
-      </div>
+    <p>Sou Lucas Bernardes Diniz, um designer apaixonado por criar artes impactantes que se conectam com o universo jovem, gamer e digital. Com uma base sólida em design gráfico e visão estratégica em marketing digital, redes sociais e inteligência artificial, desenvolvo conteúdos que não apenas chamam atenção, mas também geram resultados.</p>
+    <p>Trabalho com Canva, mas também domino ferramentas como Photoshop, Illustrator e Figma, criando desde posts carrossel e identidades visuais até artes que elevam o posicionamento de marcas no Instagram.</p>
+    <p>Venho de uma trajetória administrativa, o que me deu organização, responsabilidade e disciplina — habilidades que aplico em cada projeto visual. Estou em constante evolução e busco me tornar referência no meio criativo, fechando parcerias que transformem ideias em realidade.</p>
+  </section>
+
+  <section id="portfolio" class="reveal">
+    <h2>Portfólio</h2>
+    <div class="galeria">
+      <img src="arte-de-maldita.jpg" alt="A Maldição Tem Forma" />
+      <img src="minato.jpg" alt="Minato Free Fire" />
+      <img src="marcos-luffy.jpg" alt="Marcos D. Luffy" />
+      <img src="ego-ghost.jpg" alt="Ego Ghost" />
+      <img src="artemis.jpg" alt="Artemis" />
     </div>
-    <div class="arrow"><a href="#portfolio">⬇️</a></div>
-  </section>  <section id="portfolio" class="reveal">
-    <h2>Meus Designs</h2>
-    <div class="portfolio-images">
-      <img src="sukuna.png" alt="Design Sukuna" />
-      <img src="minato.png" alt="Design Minato" />
-      <img src="luffy.jpg" alt="Design Luffy" />
-      <img src="artemis.png" alt="Design Artemis" />
-      <img src="ego.jpg" alt="Design Ego" />
+    <div style="text-align:center; margin-top:40px;">
+      <a href="#contato" class="arrow">↓</a>
     </div>
-    <div class="arrow"><a href="#contact">⬇️</a></div>
-  </section>  <section id="contact" class="reveal">
-    <h2>Entre em Contato</h2>
-    <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab? Me chama!</p>
-    <p><strong>Email:</strong> <a href="mailto:lucasdiniz9912855@gmail.com">lucasdiniz9912855@gmail.com</a></p>
-    <p><strong>Discord:</strong> OPZ DINIZ#3921</p>
-    <a href="https://instagram.com/dnzdesigner0" target="_blank">🎮 Ver Portfólio no Instagram</a>
-  </section>  <script>
+  </section>
+
+  <section id="contato" class="reveal contato">
+    <h2>Contato</h2>
+    <p>Quer trocar ideia, pedir um orçamento ou fechar uma collab?</p>
+    <a href="mailto:lucasdiniz9912855@gmail.com">✉️ Email</a>
+    <a href="https://instagram.com/dnzdesigner0" target="_blank">📸 Instagram</a>
+    <a href="https://discord.com/users/OPZ%20DINIZ%233921" target="_blank">💬 Discord: OPZ DINIZ#3921</a>
+    <p style="margin-top:20px;font-style:italic;">Preços entre R$30 e R$40 por arte personalizada.</p>
+  </section>
+
+  <footer>
+    © 2025 DNZ DESIGN FORCE | contato: lucasdiniz9912855@gmail.com
+  </footer>
+
+  <script>
     ScrollReveal().reveal('.reveal', {
-      distance: '60px',
-      duration: 1200,
-      easing: 'ease-in-out',
+      distance: '40px',
+      duration: 1000,
       origin: 'bottom',
       interval: 200
     });
-
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#ff00cc" },
-        shape: { type: "circle" },
-        opacity: { value: 0.4 },
-        size: { value: 3, random: true },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#ff00cc",
-          opacity: 0.3,
-          width: 1
-        },
-        move: { enable: true, speed: 2 }
-      },
-      interactivity: {
-        events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: true, mode: "push" }
-        },
-        modes: {
-          repulse: { distance: 100, duration: 0.4 },
-          push: { particles_nb: 4 }
-        }
-      },
-      retina_detect: true
-    });
-  </script></body>
+  </script>
+</body>
 </html>
